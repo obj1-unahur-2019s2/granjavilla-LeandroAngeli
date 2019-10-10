@@ -11,8 +11,8 @@ object juegoGranja {
 		//  VISUALES
 	// el "Character" le da movimiento con las teclas 
  	method configurarPersonaje(){
- 	game.addVisualCharacter(hector)
- 	game.addVisualCharacter(oso)
+ 	game.addVisual(hector)
+ 	game.addVisual(oso)
  	}
  	
  	method sacarPersonaje(){
@@ -53,7 +53,8 @@ object juegoGranja {
 			} 
 		})
 		
-		
+	
+	
 		
 	}
 	
@@ -68,11 +69,15 @@ object juegoGranja {
 	
 	
 	
-	method configurarAcciones(){
-		game.onTick(1000, "movimientoOso", {oso.movimientoEnDireccion(este)}) }
+	
+	method configurarAccionesAutomaticas(){
+		game.onTick(1000, "oso se mueve" , { oso.moveteAlAzar() }) } 
 		 
-		
-	}
+	
+	
+	
+ 	 
+ 	
 	
 	
 	

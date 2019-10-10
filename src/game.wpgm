@@ -39,9 +39,11 @@ program farmville {
  	juegoGranja.configurarTeclado()
  	juegoGranja.configurarMovimiento()
  	juegoGranja.colisiones()
- 	juegoGranja.configurarAcciones()
- 	
-	game.start()
+ 	juegoGranja.configurarAccionesAutomaticas()
+ 	 
+ 	 
+ 	 
+ 	game.start()
 	
 }
 
